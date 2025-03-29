@@ -10,10 +10,10 @@ public class WhoAmIController {
 
     @GetMapping
     WhoAmI getWhoAmI() {
-        return new WhoAmI("John Doe");
+        return new WhoAmI("John Doe", 18);
     }
 
 }
 
 
-record WhoAmI(String name){}
+record WhoAmI(String name, int age){}
