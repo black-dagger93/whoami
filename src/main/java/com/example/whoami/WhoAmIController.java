@@ -10,10 +10,14 @@ public class WhoAmIController {
 
     @GetMapping
     WhoAmI getWhoAmI() {
-        return new WhoAmI("John Doe", 18);
+        return new WhoAmI("John Doe", 18, Gender.MALE);
     }
 
 }
 
 
-record WhoAmI(String name, int age){}
+record WhoAmI(String name, int age, Gender gender){}
+
+enum Gender {
+    MALE, FEMALE
+}
