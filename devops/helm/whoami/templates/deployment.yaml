@@ -11,8 +11,8 @@ spec:
       {{- include "whoami.selectorLabels" . | nindent 6 }}
   template:
     metadata:
-      annotations:
-        linkerd.io/inject: enabled
+      # annotations:
+      #   linkerd.io/inject: enabled
       labels:
         {{- include "whoami.labels" . | nindent 8 }}
     spec:
