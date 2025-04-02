@@ -28,3 +28,6 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: "azure"
+          envFrom:
+            - secretRef:
+                name: {{ .Chart.Name }}-secrets
