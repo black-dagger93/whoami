@@ -10,7 +10,7 @@ public class WhoAmIController {
 
     @GetMapping
     WhoAmI getWhoAmI() {
-        return new WhoAmI("John Doe", 18, Gender.MALE);
+        return new WhoAmI("JohnDoe", 18, Gender.MALE);
     }
 
 }
